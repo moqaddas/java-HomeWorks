@@ -1,4 +1,4 @@
-# Exercise 6: Arithmetic Operations
+float# Exercise 6: Arithmetic Operations
 
 ## Objective
 Learn how to perform arithmetic operations in Java.
