@@ -42,7 +42,7 @@ public class E35LogicalOperators {
         }
 
         // Step 5: Print Eligibility
-        System.out.println("The eligibility is " + eligibility);
+        System.out.println("You are " + eligibility);
 
 
     }
