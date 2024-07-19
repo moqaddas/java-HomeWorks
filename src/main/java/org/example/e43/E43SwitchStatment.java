@@ -8,7 +8,7 @@ public class E43SwitchStatment {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your electricity usage in kWh.");
         int usage = scanner.nextInt();
-        double bill = 0;
+        double bill = 0.0;
 
         if (usage < 0) {
             System.out.println("Invalid usage entered");

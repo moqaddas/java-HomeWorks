@@ -8,7 +8,7 @@ public class E44SwitchClass {
 Scanner scanner=new Scanner(System.in);
         System.out.println("Enter the type of meal (1 for breakfast, 2 for lunch, 3 for dinner).");
         int mealType=scanner.nextInt();
-        double price=0.0;
+        double price;
         switch (mealType){
             case 1:
                 price=5.00;
