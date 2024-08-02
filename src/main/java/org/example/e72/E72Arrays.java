@@ -12,7 +12,7 @@ public class E72Arrays {
             daysOfWeek[i] = input.nextLine();
         }
         input.close();
-        for (int i=0;i<daysOfWeek.length;i++){
+        for (int i = 0; i < daysOfWeek.length; i++) {
             System.out.println(daysOfWeek[i]);
         }
     }
