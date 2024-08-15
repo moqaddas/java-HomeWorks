@@ -1,7 +1,5 @@
 package org.example.e23;
 
-import java.sql.SQLOutput;
-
 public class E23StringEqualsIfConditions {
     public static void main(String[] args) {
         // Declare a string variable and assign a value
