@@ -1,19 +1,31 @@
 package org.example.e114;
 
 public class E114JavaMethods {
-    public static void main(String[] args) {
-        // Call the add method with arguments that add up to 30
-
-        // Call the multiply method with arguments that multiply to 30
-
-        // Call the subtract method with arguments that subtract to 20
-
+    public static void multiply(int a, int b) {
+        int result = a * b;
+        System.out.println("Multiplication " + result);
     }
 
-    // Create method multiply with two integer parameters and a print statement to display the result
+    public static void add(int a, int b) {
+        int result = a + b;
+        System.out.println("Addition " + result);
+    }
 
-    // Create method add with two integer parameters and a print statement to display the result
+    public static void subtract(int a, int b) {
+        int result = a - b;
+        System.out.println("Subtraction " + result);
+    }
 
-    // Create method subtract with two integer parameters and a print statement to display the result
-
+    public static void main(String[] args) {
+        add(15, 15);
+        multiply(5, 6);
+        subtract(30, 10);
+    }
 }
+
+
+
+
+
+
+
