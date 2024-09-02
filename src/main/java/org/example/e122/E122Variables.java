@@ -1,7 +1,7 @@
 package org.example.e122;
 
 public class E122Variables {
-    // Declare 3 instance variables: name of the country, capital, and population size
+    // Declare 3 instance variables: name of the countryName, capital, and populationSize
 
     // Create a method to display values of instance variables
 

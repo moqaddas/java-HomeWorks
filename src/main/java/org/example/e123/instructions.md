@@ -6,6 +6,12 @@ Learn how to declare instance variables and observe their default values in Java
 ## Instructions
 
 **Declaring Instance Variables and Printing Default Values**
+- Declare the following instance variables at the class level:
+- int myInt: To hold an integer value.
+- String myString: To hold a string value.
+- double myDouble: To hold a double value.
+- boolean myBoolean: To hold a boolean value.
+- float myFloat: To hold a float value.
 
 In this project, you will declare instance variables of different types and print their default values without assigning any initial values.
 
@@ -25,7 +31,7 @@ null
 0.0
 false
 0.0
-\```
+```
 
 ## Tips
 - Ensure your variables are declared as instance variables.

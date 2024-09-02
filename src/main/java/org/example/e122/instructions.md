@@ -1,10 +1,10 @@
 **For you to do:**
 
 Declare 3 instance variables to hold:
-- name of the country
+- countryName
 - capital
-- population size
-  Create a method to display values of instance variables.
+- populationSize
+  Create a method to display values of instance variables name of the method should be display.
   Create 2 objects, assign values to instance variables, and execute the method to display.
 
 **Output:**

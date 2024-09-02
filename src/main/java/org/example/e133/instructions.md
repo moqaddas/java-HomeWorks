@@ -1,38 +1,40 @@
-Create a static method with the following specs:
+# Exercise: Counting Occurrences of 'a' or 'A' Using Static Methods
 
+## Objective
+Learn how to create a static method in Java that counts the occurrences of a specific character in a string.
 
-Returns:
+## Instructions
 
-```
-an integer
-```
+**Counting Occurrences with a Static Method**
 
-Name:
+In this project, you will create a static method that counts the number of occurrences of the character 'a' or 'A' within a string.
 
-```
-countA
-```
+### Steps for You to Do:
 
-Parameters:
+1. **Declare Static Method:**
+    - Create a static method called `countA` that:
+        - **Returns:** an integer
+        - **Takes:** a String called `s`
+    - Inside the method, write logic to count the occurrences of 'a' or 'A' in the string `s`.
 
-```
-a String called s
-```
+2. **Main Method:**
+    - Inside the main method, call the `countA` method with different string inputs and print the results.
 
-Purpose:
+### Example InputOutput:
 
-```
-count the number of occurrences of 'a' or 'A' within s
-```
+- `countA("aaa")` ==> 3
+- `countA("aaBBdf8k3AAadnklA")` ==> 6
 
-Examples:
+### Purpose:
 
-```
-countA("aaa") ==> 3
-```
+- The `countA` method will loop through each character in the string `s` and count how many times 'a' or 'A' appears.
 
-```
-countA("aaBBdf8k3AAadnklA") ==> 6
-```
+## Tips:
+- Use a for loop to iterate through each character of the string.
+- Remember to check for both lowercase 'a' and uppercase 'A'.
 
-Hint: How do you write a for loop to loop through every letter of a string?  You've done this multiple times already :)
+## Troubleshooting:
+- If the output doesn't match the expected result, ensure that the loop is correctly checking for both 'a' and 'A' in the string.
+- Make sure the method is returning the count of occurrences correctly.
+
+By completing this exercise, you will improve your understanding of how to use loops and static methods in Java to manipulate strings. Happy coding!

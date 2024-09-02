@@ -6,5 +6,8 @@ public class E123Variables {
     public static void main(String[] args) {
         // Create an instance of the class
         // Access instance variables and print them without assigning any values
+
+        // Print the default values of the instance variables
+
     }
 }

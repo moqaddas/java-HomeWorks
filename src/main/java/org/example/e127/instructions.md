@@ -12,13 +12,13 @@ In this project, you will create two methods: one non-static and one static, and
 **For you to do:**
 
 1. **Create Non-Static Method**
-    - Create a non-static method that prints the following message:
+    - Create a non-static method that prints the following message call it nonStaticMethod:
       ```java
       "Programming is amazing."
       ```
 
 2. **Create Static Method**
-    - Create a static method that prints the following message:
+    - Create a static method that prints the following message call it staticMethod :
       ```java
       "Java is awesome."
       ```

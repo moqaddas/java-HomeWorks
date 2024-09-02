@@ -1,71 +1,59 @@
-**For you to do:**
+# Exercise: Replacing Spaces with Underscores in a String
 
-Create a method that will be available to all classes in your project with following specifications:
+## Objective
+Learn how to create a method in Java that replaces all spaces in a string with underscores, while applying different access modifiers to control the visibility and accessibility of the method.
 
-Returns:
+## Instructions
 
-```
-a String
-```
+**Creating a Method to Replace Spaces with Underscores**
 
-Name:
+In this project, you will create a method that takes a string and replaces every space with an underscore, while applying different access modifiers to observe how they affect access to the method from different parts of the project.
 
-```
-alphabetical
-```
+### Steps for You to Do:
 
-Parameters:
+1. **Declare Method with Access Modifiers:**
+    - Create a method with the following specifications:
+        - **Returns:** a String
+        - **Name:** `replaceSpaces`
+        - **Parameters:** a String called `str`
+        - **Purpose:** The method will return a new string where all spaces are replaced with underscores.
+        - **Apply different access modifiers** to the method (private, default, protected, public) and observe the behavior when accessing the method from other classes.
 
-```
-a String called str
-```
+2. **Method Logic:**
+    - Inside the method, use a string manipulation method to replace every space (' ') in the string with an underscore ('_').
 
-Purpose:
+3. **Main Method:**
+    - In the main method, call the `replaceSpaces` method with simple string inputs and print the results.
+    - Experiment with different access modifiers (private, default, protected, public) to observe how they affect access to the method when calling it from another class.
 
-```
-Return a string that is composed of each letter as long as the letter is later on in the alphabet
-```
+### Example InputOutput:
 
-```
-than its previous one.  You can assume actual parameters are lowercase.
-See below examples.
-```
+- `replaceSpaces("hello world")` ==> "hello_world"
+  `replaceSpaces("java is fun")` ==> "java_is_fun"
+  `replaceSpaces("i love coding")` ==> "i_love_coding"
 
-Additional Info:
+### Expected Output:
 
-You can use < and > to compare characters (not Strings), where characters later on in the alphabet are "greater".  Examples:
+- ```
+  hello_world
+  ```
+  ```
+  java_is_fun
+  ```
+  ```
+  i_love_coding
+  ```
 
-```
-'a' < 'b' ==> True
-```
+### Purpose:
 
-```
-'a' < 'a' ==> False
-```
+- The `replaceSpaces` method helps you practice simple string manipulation by replacing spaces with underscores while understanding how access modifiers control method accessibility from different parts of a project.
 
-```
-'a' > 'b' ==> False
-```
+## Tips:
+- Use the String class's replace method to easily replace all spaces with underscores.
+- Experiment with different access modifiers (private, default, protected, public) and try to call the method from different classes to understand how each modifier affects access.
 
-Examples:
+## Troubleshooting:
+- If the output doesn't match the expected result, ensure that you're correctly replacing spaces with underscores in the string.
+- If you encounter access errors, verify that the correct access modifier is being applied to the method, and consider where the method is being accessed from.
 
-```
-alphabetical("hello") ==> "hlo"
-```
-
-```
-alphabetical("software") ==> "stwr"
-```
-
-```
-alphabetical("language") ==> "lnug"
-```
-
-**Expected Output:**
-
-```
-hlo
-stwr
-lnug
-```
-
+By completing this exercise, you will practice both basic string manipulation and how to use access modifiers in Java to control method visibility. Happy coding!
