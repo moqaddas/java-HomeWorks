@@ -1,11 +1,11 @@
 package org.example.e116;
 
 public class E116JavaMethods {
-    public static void main(String[] args) {
-        // Call the bothEven method with various arguments to test the method
-    }
+   public static boolean bothEven(int a, int b){
+       return a % 2 == 0 && b % 2 == 0;
+   }
 
-    // Create method bothEven with two integer parameters
-    // Inside the method, check if both numbers are even
-    // Return true if both numbers are even, otherwise return false
+    public static void main(String[] args) {
+        System.out.println(bothEven(1, 4));
+    }
 }
