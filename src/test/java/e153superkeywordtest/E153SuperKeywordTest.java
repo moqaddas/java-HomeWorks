@@ -1,6 +1,6 @@
 package e153superkeywordtest;
 
-import org.example.e153.E153SuperKeyword;
+import org.example.e153.E153SuperKeyword; // Ensure this matches the actual package and class name
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,8 +31,8 @@ public class E153SuperKeywordTest {
     public void testChildClassConstructorCallsParent() {
         // Execute the main method to generate output
         E153SuperKeyword.main(new String[]{});
-        // The expected output is the statement printed by the Parent class constructor
-        String expectedOutput = "This is Parent constructor";
+        // The expected output is the statement printed by the Vehicle class constructor
+        String expectedOutput = "This is the Vehicle constructor";
 
         // Asserts that the captured output matches the expected output
         assertEquals("The output from the main method does not match the expected output.", expectedOutput, outContent.toString().trim());
