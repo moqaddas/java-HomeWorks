@@ -32,9 +32,9 @@ public class E144ConstructorTest {
         E144Constructor.main(new String[]{});
         // Construct the expected output string based on the expected output
         String expectedOutput =
-                "Eggs 3.0 Produce true 10\n" +
-                        "Paper Towels 2.0 misc false 24\n" +
-                        "Paper Towels 2.0 misc false 0\n"; // Corrected to match actual behavior of constructors
+                "Eggs 3.0 Produce true 10" +System.lineSeparator()+
+                        "Paper Towels 2.0 misc false 24"+System.lineSeparator()+
+                        "Paper Towels 2.0 misc false 0"+System.lineSeparator(); // Corrected to match actual behavior of constructors
         // Asserts that the captured output matches the expected output
         assertEquals("The output from the main method does not match the expected output", expectedOutput.trim(), outContent.toString().trim());
     }
