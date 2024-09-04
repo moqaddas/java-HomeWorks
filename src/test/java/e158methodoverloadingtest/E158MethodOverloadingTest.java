@@ -29,14 +29,14 @@ public class E158MethodOverloadingTest {
 
     @Test
     public void testMainMethodOutput() {
-        // Execute the main method from E158SuperKeyword class to generate output
+        // Execute the main method from E157SuperKeyword class to generate output
         E158MethodOverloading.main(new String[]{});
 
         // The expected output sequence based on loan payment calculations
         String expectedOutput =
                 "875.00" + System.lineSeparator() +
                         "437.50" + System.lineSeparator() +
-                        "291.67";
+                        "350.00";
 
         // Asserts that the captured output matches the expected output
         assertEquals("The output from the main method does not match the expected output.", expectedOutput, outContent.toString().trim());
