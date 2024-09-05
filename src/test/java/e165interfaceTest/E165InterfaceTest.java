@@ -11,7 +11,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class E165SuperKeywordTest {
+public class E165InterfaceTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
