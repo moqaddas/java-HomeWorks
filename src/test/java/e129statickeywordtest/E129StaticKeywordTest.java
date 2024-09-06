@@ -32,7 +32,7 @@ public class E129StaticKeywordTest {
         // Execute the main method which in turn calls the display method
         E129StaticKeyword.main(new String[]{});
         // Construct the expected output string
-        String expectedOutput = "Morocco located on Africa continent" + System.lineSeparator();
+        String expectedOutput = "Morocco is located in African continent" + System.lineSeparator();
         // Assert that the captured output matches the expected output
         assertEquals("The output does not match the expected message", expectedOutput, outContent.toString());
     }
