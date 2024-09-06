@@ -37,14 +37,14 @@ Learn how to implement method overloading in Java by creating multiple methods w
     - The output should show the results of each loan payment calculation:
         - `"875.00"` (from calculating a simple loan payment over 12 months)
         - `"437.50"` (from calculating a loan payment over 24 months)
-        - `"291.67"` (from calculating a loan payment with a down payment over 24 months)
+        - `"350.00"` (from calculating a loan payment with a down payment over 24 months)
 
    **Example Implementation:**
     - The output sequence should clearly reflect the results of the loan payment calculations:
     - ```
       875.00
       437.50
-      291.67
+      350.00
       ```
 
 **Step 3: Run Your Application**
