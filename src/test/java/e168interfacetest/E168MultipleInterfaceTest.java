@@ -1,6 +1,7 @@
 package e168interfacetest;
 
 import org.example.e167.E167MultipleInterface;
+import org.example.e168.E168MultipleInterface;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +31,7 @@ public class E168MultipleInterfaceTest {
     @Test
     public void testMultipleInterfaceInheritanceInBankAccount() {
         // Execute the main method from E167MultipleInterface class to generate output
-        E167MultipleInterface.main(new String[]{});
+        E168MultipleInterface.main(new String[]{});
 
         // Construct the expected output string
         String expectedOutput =

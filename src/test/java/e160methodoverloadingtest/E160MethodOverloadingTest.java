@@ -1,6 +1,6 @@
 package e160methodoverloadingtest;
 
-import org.example.e160.BankAccount;
+import org.example.e160.E160MethodOverloading;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class BankAccountTest {
+public class E160MethodOverloadingTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -30,7 +30,7 @@ public class BankAccountTest {
     @Test
     public void testMainMethodOutput() {
         // Execute the main method from E160MethodOverloading class to generate output
-        BankAccount.main(new String[]{});
+        E160MethodOverloading.main(new String[]{});
 
         // Construct the expected output string
         String expectedOutput =

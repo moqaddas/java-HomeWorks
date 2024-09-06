@@ -1,6 +1,7 @@
-package e169encapsulationtest;
+package e165interfaceTest;
 
-import org.example.e169.E169Encapsulation;
+
+import org.example.e165.E165InterfaceClass;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class HumanResourcesTest {
+public class E165InterfaceTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -28,14 +29,16 @@ public class HumanResourcesTest {
     }
 
     @Test
-    public void testEmployeeEncapsulation() {
-        // Execute the main method from HumanResources class to generate output
-        E169Encapsulation.main(new String[]{});
+    public void testInterfaceImplementation() {
+        // Execute the main method from E157SuperKeyword class to generate output
+        E165InterfaceClass.main(new String[]{});
 
         // Construct the expected output string
         String expectedOutput =
-                "Employee Name: John" + System.lineSeparator() +
-                "Employee Age: 30";
+                "Smartphone is turning on" + System.lineSeparator() +
+                "Smartphone is turning off" + System.lineSeparator() +
+                "Laptop is turning on" + System.lineSeparator() +
+                "Laptop is turning off";
 
         // Assert that the captured output matches the expected output
         assertEquals("The output from the main method does not match the expected output.", expectedOutput, outContent.toString().trim());
