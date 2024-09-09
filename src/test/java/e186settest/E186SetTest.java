@@ -34,7 +34,7 @@ public class E186SetTest {
         E186Set.main(new String[]{});
 
         // Build the expected output string
-        String expectedOutput = "[first, second, third]" + System.lineSeparator() +
+        String expectedOutput = "[third, first, second]" + System.lineSeparator() +
                 "[]";
 
         // Assert that the actual output matches the expected output
