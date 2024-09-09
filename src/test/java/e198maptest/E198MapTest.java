@@ -1,6 +1,6 @@
-package e208maptest;
+package e198maptest;
 
-import org.example.e208.E208Map;
+import org.example.e198.E198Map;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class E208MapTest {
+public class E198MapTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -27,7 +27,7 @@ public class E208MapTest {
 
     @Test
     public void testMainOutput() {
-        E208Map.main(new String[]{}); // Directly test the main method
+        E198Map.main(new String[]{}); // Directly test the main method
         // Build the expected output using System.lineSeparator() for newline characters
         String expectedOutput = "orange : 20" + System.lineSeparator() +
                 "apple : 30" + System.lineSeparator() +

@@ -1,4 +1,4 @@
-package e204maptest;
+package e194maptest;
 
 import org.example.e194.E194Map;
 import org.junit.After;

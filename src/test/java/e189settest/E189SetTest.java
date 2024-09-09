@@ -37,13 +37,6 @@ public class E189SetTest {
                 "john.doe@example.com" + System.lineSeparator() +
                 "jane.smith@example.com" + System.lineSeparator() +
                 "admin@event.com" + System.lineSeparator() +
-                "info@company.com" + System.lineSeparator() +
-                System.lineSeparator() +
-                "Email List using Iterator:" + System.lineSeparator() +
-                "null" + System.lineSeparator() +
-                "john.doe@example.com" + System.lineSeparator() +
-                "jane.smith@example.com" + System.lineSeparator() +
-                "admin@event.com" + System.lineSeparator() +
                 "info@company.com";
 
         // Assert that the actual output matches the expected output

@@ -1,6 +1,6 @@
-package e209maptest;
+package e199maptest;
 
-import org.example.e209.E209Map;
+import org.example.e199.E199Map;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 
 import static org.junit.Assert.assertEquals;
 
-public class E209MapTest {
+public class E199MapTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -28,7 +28,7 @@ public class E209MapTest {
 
     @Test
     public void testMainOutput() {
-        E209Map.main(new String[]{}); // Directly test the main method
+        E199Map.main(new String[]{}); // Directly test the main method
         DecimalFormat df = new DecimalFormat("0.00");
         String lineSeparator = System.lineSeparator();
         // Construct the expected output, ensuring the subtotal is formatted to two decimal places.
