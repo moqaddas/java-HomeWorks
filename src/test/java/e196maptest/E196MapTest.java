@@ -1,44 +1,56 @@
 package e196maptest;
 
-import org.example.e195.E195Map;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
+import org.example.e196.E196Map;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class E196MapTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 
-    @Before
+    @BeforeEach
     public void setUpStreams() {
-        // Redirect System.out to capture the output for testing
         System.setOut(new PrintStream(outContent));
     }
 
-    @After
+    @AfterEach
     public void restoreStreams() {
-        // Restore System.out after the test
         System.setOut(originalOut);
     }
 
     @Test
-    public void testStudentsBySubjectOutput() {
-        // Execute the main method to produce the output
-        E195Map.main(new String[]{});
+    public void testMainMethodOutput() {
+        E196Map.main(new String[]{});
 
-        // Expected output for Map of List (Students by Subject)
-        String expectedOutput = "Subject: Mathematics Students: [Alice, Bob]" + System.lineSeparator() +
-                "Subject: Science Students: [Charlie, David]" + System.lineSeparator() +
-                "Subject: History Students: [Eve, Frank]";
+        // Get the console output
+        String output = outContent.toString().trim();
 
-        // Check if the output matches the expected output
-        assertEquals(expectedOutput, outContent.toString().trim());
+        // Check for the presence of expected content
+        assertTrue(output.contains("Department: HR Employees: [Alice, Bob]"));
+        assertTrue(output.contains("Department: IT Employees: [Charlie, David, Eve]"));
+        assertTrue(output.contains("Department: Finance Employees: [Frank, Grace]"));
+
+        assertTrue(output.contains("All Departments:"));
+        assertTrue(output.contains("HR"));
+        assertTrue(output.contains("IT"));
+        assertTrue(output.contains("Finance"));
+
+        assertTrue(output.contains("All Employees:"));
+        assertTrue(output.contains("Alice"));
+        assertTrue(output.contains("Bob"));
+        assertTrue(output.contains("Charlie"));
+        assertTrue(output.contains("David"));
+        assertTrue(output.contains("Eve"));
+        assertTrue(output.contains("Frank"));
+        assertTrue(output.contains("Grace"));
+
+
     }
-
 }
