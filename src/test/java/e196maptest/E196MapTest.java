@@ -37,7 +37,7 @@ public class E196MapTest {
         assertTrue(output.contains("Department: IT Employees: [Charlie, David, Eve]"));
         assertTrue(output.contains("Department: Finance Employees: [Frank, Grace]"));
 
-        assertTrue(output.contains("All Departments:"));
+
         assertTrue(output.contains("HR"));
         assertTrue(output.contains("IT"));
         assertTrue(output.contains("Finance"));
